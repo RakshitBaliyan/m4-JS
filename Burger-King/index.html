@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="./logo-png.png" alt="Logo">
+        <div class="gif">
+            <img src="./loading-gif.gif" alt="">
+        </div>
+        <div class="login-signup">
+            <button >Login/SignUp</button>
+        </div> 
+    </nav>
+    <div class="main">
+        <h1>Welcome to Burger King</h1>
+        <p>Order your food...</p>
+        <div id="food-items">
+            <div class="food-item">
+                <img src="./burger-png.png" alt="burger">
+                <label for="food1">Burger (Rs. 99)</label>
+                <input type="checkbox" id="food1" class="food-checkbox" data-price="99">
+                <input type="number" id="quantity1" class="food-quantity" value="0" min="0" disabled>
+            </div>
+
+            <div class="food-item">
+                <img src="./fries-png.png" alt="">
+                <label for="food2">French Fries (Rs. 79)</label>
+                <input type="checkbox" id="food2" class="food-checkbox" data-price="79">
+                <input type="number" id="quantity2" class="food-quantity" value="0" min="0" disabled>
+            </div>
+
+            <div class="food-item">
+                <img src="./coke-png.png" alt="">
+                <label for="food3">Coke (Rs. 49)</label>
+                <input type="checkbox" id="food3" class="food-checkbox" data-price="49">
+                <input type="number" id="quantity3" class="food-quantity" value="0" min="0" disabled>
+            </div>
+
+            <div class="food-item">
+                <img src="./shake-png.png" alt="">
+                <label for="food4">Shake (Rs. 69)</label>
+                <input type="checkbox" id="food4" class="food-checkbox" data-price="69">
+                <input type="number" id="quantity4" class="food-quantity" value="0" min="0" disabled>
+            </div>
+
+            <div class="total-cost">
+                Total: Rs.<span id="total">0</span>
+            </div>
+
+            <button id="place-order">Place Order</button>
+        </div>
+
+        <div id="order-details" class="hidden">
+            <p>Your order has been placed! Order ID: <span id="order-id" style="color: Red; font-weight: 600"></span></p>
+            <p>Time remaining: <span id="timer" style="color: Red; font-weight: 600">00:05</span></p>
+        </div>
+
+        <div id="thank-you" class="hidden">
+            <p>Thanks for purchasing!</p>
+            <div id="feedback-section">
+                <label for="feedback">Your Feedback:</label>
+                <input type="text" id="feedback" placeholder="Leave your feedback">
+                <button id="submit-feedback" style="width: 100px; color:white; background-color:rgb(183, 113, 0); border-radius: 8px">Submit</button>
+            </div>
+            <h2 style="color: green;">User Feedbacks:</h2>
+            <p id="random-feedback">Great service!</p>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

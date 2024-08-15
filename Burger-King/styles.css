@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F6EBDB;
+}
+.hidden {
+    display: none;
+}
+#feedback-section {
+    margin-top: 8px;
+}
+
+/* Nav-bar */
+
+nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 12px 22px 0px 22px;
+}
+nav>img{
+    height: 50px;
+}
+.login-signup{
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.login-signup>button{
+    width: 150px;
+    height: 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #f7963b;
+    cursor: pointer;
+}
+.gif>img{
+    height: 150px;
+    margin-left: 100px;
+}
+
+/* Main-area */
+
+.main{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main>h1{
+    color: #cf6502;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+.main>p{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+#food-items{
+    width: 700px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #F07F16;
+    justify-content: center;
+    border-radius: 16px;
+}
+#food-items>.food-item{
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#food-items>.food-item>img{
+    height: 46px;
+}
+#food-items>.food-item>#food1,#food2,#food3,#food4{
+    width: 22px;
+    height: 22px;
+}
+#food-items>.food-item>#quantity1, #quantity2, #quantity3, #quantity4{
+    height: 22px;
+    width: 50px;
+}
+.total-cost{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+#place-order{
+    margin-top: 1rem;
+    width: 200px;
+    height: 38px;
+    padding: 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #cf6502;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#order-details{
+    font-size: 2rem;
+}
+#thank-you{
+    margin: 3rem 0;
+    font-size: 1.5rem;
+}
+#thank-you>p{
+    margin-top: 8px;
+}
